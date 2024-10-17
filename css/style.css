@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@import url(reset.css);
+@font-face {
+  font-family: "meriendaregular";
+  src: url(../assets/webfontkit\ Merienda/merienda-variablefont_wght-webfont.woff2), url(../assets/webfontkit\ Merienda/merienda-variablefont_wght-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+  font-family: "meriendaregular";
+  background: #d1ecf8;
+}
+
+.title__content {
+  height: 70vh;
+  border-radius: 27% 26% 47% 53%/0% 0% 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: #66a3a3;
+  border-bottom: 6px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #f99898, #fbbaed, #cda8ff, #adc5f7, #adf7ba, #f4f5d5, #f7bc8c);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.nav__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+}
+
+.button__link {
+  background-color: rgb(191, 152, 255);
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 200px;
+  height: 25px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.button__link:hover {
+  opacity: 80%;
+}
+
+.cv__link {
+  margin-right: 600px;
+}
+
+.bubble__content {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 700px;
+}
+
+.a__propos, .competences, .projet {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  border-radius: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 20px;
+  opacity: 70%;
+}
+
+.competences {
+  text-align: end;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.p__title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.bubble2 {
+  margin-left: 500px;
+  height: 200px;
+}
+
+.arrow1 {
+  position: absolute;
+  bottom: -110px;
+  left: -20px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 140px 40px 0 40px;
+  border-color: #A7A7A7 transparent transparent transparent;
+  transform: rotate(30deg);
+  opacity: 90%;
+}
+
+.arrow2 {
+  position: absolute;
+  bottom: -100px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 120px 0 0 50px;
+  border-color: transparent transparent transparent #A7A7A7;
+  transform: rotate(170deg);
+  opacity: 90%;
+}
+
+.arrow3 {
+  position: absolute;
+  bottom: -60px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 80px 20px 0 20px;
+  border-color: #A7A7A7 transparent transparent transparent;
+  transform: rotate(30deg);
+  opacity: 90%;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1700px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+  margin: 30px;
+}
+
+/* Afficher le diaporama actif */
+#slide1:checked ~ .carousel-items {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-items {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-items {
+  transform: translateX(-200%);
+}
+
+/* Styles des boutons de navigation */
+.navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  margin: 0 5px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto; /* Garde les proportions de l'image */
+  -o-object-fit: cover;
+     object-fit: cover; /* Remplit le conteneur sans déformer l'image */
+}/*# sourceMappingURL=style.css.map */
