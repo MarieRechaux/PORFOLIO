@@ -105,6 +105,11 @@ body {
   margin-top: 50px;
 }
 
+.label {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
 .message {
   min-height: 150px;
 }
@@ -118,4 +123,79 @@ body {
 }
 .btn__submit:hover {
   opacity: 75%;
+}
+
+.bubble__reseaux {
+  max-width: 20%;
+  max-height: 70%;
+  margin-left: 50px;
+  margin-top: 300px;
+}
+
+.arrow2 {
+  position: absolute;
+  bottom: -60px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 80px 20px 0 20px;
+  border-color: #A7A7A7 transparent transparent transparent;
+  transform: rotate(30deg);
+  opacity: 85%;
+}
+
+.paragraphe__reseaux {
+  font-size: 1.5rem;
+}
+
+.reseaux__content {
+  background-color: rgba(102, 163, 163, 0.55);
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  min-height: 20px;
+  width: 30%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.link__reseaux {
+  text-decoration: none;
+  padding: 40px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.link__reseaux:hover {
+  color: #66a3a3;
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    margin-left: 7%;
+  }
+  .reseaux__content {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1499px) {
+  .reseaux__content {
+    width: 51%;
+  }
+}
+@media screen and (max-width: 869px) {
+  .reseaux__content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reseaux__content {
+    width: 70%;
+  }
+  .bubble__reseaux {
+    max-width: 25%;
+  }
 }/*# sourceMappingURL=style-contact.css.map */
